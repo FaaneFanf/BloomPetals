@@ -1,0 +1,140 @@
+header{flex: 1; 
+  min-width: 0; 
+  height: 100px;
+  object-fit: cover;
+  padding-top: 20px;}
+
+nav {display: flex;
+    align-items: center;
+    background-size: 30px;
+    background-color: #8a8d96;
+    padding: 15px 30px;}
+
+nav a {text-decoration: none;
+    color: black;
+    margin-right: 50px;}
+
+/* pousse la barre de recherche complètement à droite */
+.search-bar {margin-left: auto;}
+
+.search-bar input {
+    width: 200px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;}
+
+body {margin: 20px;
+background-color: #07a875;}
+
+main { flex-direction: row;
+  text-align: center;}
+
+  div img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*pour styliser le bandeau du haut*/
+.bandeau {font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem;
+    background-color: #1d5911;}
+
+/*pour modifier seulement les titres*/
+.bandeau a {color: #c2cddf;
+    text-decoration: none;}
+
+.bandeau a:hover {color: white;}
+
+
+.titre_equipe {font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  text-shadow: #8a8d96;
+  flex-direction: row;
+  margin-bottom: 40px;
+  }
+
+
+/* Bloc d'un membre */
+.membre {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-top: 2px solid rgb(56,225,143);
+    border-bottom: 2px solid rgb(56,225,143);
+    width: 100%;
+    box-sizing: border-box;}
+
+/* Partie texte */
+.texte {flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;}
+
+/* Image */
+.membre img {flex: 1;/* toutes les images occupent la même largeur */
+    width: 50%;
+    height: 200%;/* même hauteur pour toutes */
+    object-fit: contain;/* remplit le cadre sans déformation */
+    border-radius: 20px;/* coins arrondis */
+    display: block;
+    margin-bottom: 12px;
+   }
+
+.fond {background-color: #e0ebe5;}
+
+/* .equipe {display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-top: 2px solid rgb(56, 225, 143);
+    border-bottom: 2px solid rgb(56, 225, 143);
+    width: 100%;
+    box-sizing: border-box;}
+
+/* .equipe img {
+    flex: 1;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 12px;
+  } */
+
+/* .equipe text {font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem;} */
+  
+
+
+/*Version responsive (mobile)
+
+Ajoute à la fin du CSS :
+
+CSS
+@media (max-width: 768px) {
+ 
+.membre {
+flex-direction: column;
+text-align: center;
+}
+ 
+.membre img {
+width: 100%;
+max-width: 300px;
+height: 300px;
+}*/

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--lien vers mon CSS-->
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+<header>
+        <div class="bandeau">
+            <a href="index(jobJ3).html">Accueil</a>
+            <a href="entreprise.html">Entreprise</a>
+             <a href="realisations.html">Réalisations</a>
+            <a href="contact.html">Contact</a>
+
+            <form class="search-bar">
+                <input type="search" placeholder="Rechercher...">
+            </form>
+
+        </div> 
+<main>
+            <img src="c:\Users\alexa\Desktop\LPTF\1 - b1\3rt-html\semaine 1\Jour3\logo-bloompetals.png" width="400" alt="Logo BloomPetals">
+    
+<div class="fond">  
+    
+    <h1>Par ici les infos persos</h1>
+
+    <form action="#" method="post"> <!--<form> : contient l'ensemble du formulaire.-->
+
+        <!-- Civilité -->
+        <label for="civilite">Civilité :</label>
+        <select id="civilite" name="civilite" required> 
+            <!--<select> : crée la liste déroulante pour la civilité.-->
+            <!--required : rend le champ obligatoire avant la soumission.-->
+            <option value="">-- Sélectionnez --</option>
+            <option value="madame">Madame</option>
+            <option value="monsieur">Monsieur</option>
+            <option value="autre">Autre</option>
+        </select>
+
+        <br><br> <!--<br> saut de ligne-->
+
+        <!-- Nom -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required> 
+        <!--<input type="text"> : permet de saisir le nom et le prénom.-->
+        <!--required : rend le champ obligatoire avant la soumission.-->
+
+        <br><br>
+
+        <!-- Prénom -->
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+
+        <br><br>
+
+        <!-- Adresse postale -->
+        <label for="adresse">Adresse postale :</label>
+        <textarea id="adresse" name="adresse" rows="4" cols="40" required></textarea> 
+        <!--<textarea> : permet de saisir une adresse postale sur plusieurs lignes.-->    
+        <!--required : rend le champ obligatoire avant la soumission.-->
+        <br><br>
+
+        <!-- Politique de confidentialité -->
+        <input type="checkbox" id="confidentialite" name="confidentialite" required> <!--<input type="checkbox"> : permet de valider la politique de confidentialité.-->
+        <label for="confidentialite">
+            J'accepte la politique de confidentialité de l'entreprise (on en a acune)
+        </label>
+
+        <br><br>
+
+        <!-- Bouton de validation -->
+        <button type="submit">Envoyer</button> <!--<button type="submit"> : bouton d'envoi du formulaire.-->
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+

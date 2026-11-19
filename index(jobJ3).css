@@ -1,0 +1,141 @@
+header{flex: 1; 
+  min-width: 0; 
+  height: 100px;
+  object-fit: cover;
+  padding-top: 20px;}
+
+nav {display: flex;
+    align-items: center;
+    background-size: 30px;
+    background-color: #8a8d96;
+    padding: 15px 30px;}
+
+nav a {text-decoration: none;
+    color: black;
+    margin-right: 50px;}
+
+div img{
+    width: 100%;
+    height: auto;
+}
+
+/* pousse la barre de recherche complètement à droite */
+.search-bar {margin-left: auto;}
+
+.search-bar input {
+    width: 200px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;}
+
+body {margin: 20px;
+background-color: #07a875;}
+
+main { flex-direction: row;
+  text-align: center;
+  }
+
+/*pour styliser le bandeau du haut*/
+.bandeau {font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem;
+    background-color: #1d5911;}
+/*pour modifier seulement les titres*/
+.bandeau a {color: #c2cddf;
+    text-decoration: none;}
+
+.bandeau a:hover {color: white;}
+
+.logo {flex: 1; 
+  min-width: 100%; 
+  height: auto;
+  padding: 1fr;
+  object-fit: cover;
+  padding-top: 20px;}
+
+.p1 {display: flex;
+  flex-direction: row;
+  align-items: auto;
+  text-align: justify;
+  margin: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 1fr;
+  margin-bottom: 40px;
+  color: #171616;}
+
+
+
+/*Pour créer la partie visuel avec les fleurs*/
+.conteneur1 {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-top:2px solid rgb(56, 225, 143);
+  border-bottom:2px solid rgb(56, 225, 143);
+  margin-bottom: 40px;
+  gap: 8px; /* espace entre les photos */
+  width: auto;}
+
+.conteneur1 img {
+  flex: 1; /* chaque photo prend une part égale de la largeur */
+  min-width: 0; /* évite le débordement horizontal */
+  height: auto;
+  object-fit: cover; /* recadre sans déformer */
+  padding-top: 20px;}
+
+
+  /*Pour créer la partie service*/
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 30px;}
+
+.service {
+    width: 30%;}
+
+/* Titre */
+.service h4 {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;}
+
+/* Texte */
+.service p {
+    color: #777;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 20px;}
+
+/* Lien */
+.service a {
+    text-decoration: none;
+    color: #065711;
+    font-weight: bold;}
+
+.service a:hover {
+    color: #106a1f;}  
+
+.fond {background-color: #e0ebe5;}
+
+@media screen and (max-width: 430px){
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+    div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+}
